@@ -28,7 +28,12 @@ public class Main {
 	        gabriel.inserir(produto9);
 	        gabriel.inserir(produto10);
 	        
+	        gabriel.imprimiLista();
+
 	        
+	        gabriel.remover(produto10);
+	        
+	        System.out.println("-----------------------------------------------------------");
 	        gabriel.imprimiLista();
 
 

@@ -45,6 +45,19 @@ public class ListaProdutos {
 	        primeiro = 0;
 	        ultimo = 0;
 	    }
+	    
+	    public void remover(Produto produto) {
+	    	int indexEncontrado = 0;
+	    	 for (int i=0; i < this.ultimo;i++){
+		            if(produto.nome == listaProdutos[i].nome) {
+		            	indexEncontrado = i;
+		            }
+		        }
+	    	 for(int i = indexEncontrado ; i < this.ultimo;i++) {
+	    		 
+	    	 }
+	    	
+	    }
 
 
 }

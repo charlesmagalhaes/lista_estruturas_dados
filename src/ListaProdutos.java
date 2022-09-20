@@ -48,14 +48,19 @@ public class ListaProdutos {
 	    
 	    public void remover(Produto produto) {
 	    	int indexEncontrado = 0;
+	    	System.out.println("Ultimo"+this.ultimo);
 	    	 for (int i=0; i < this.ultimo;i++){
 		            if(produto.nome == listaProdutos[i].nome) {
 		            	indexEncontrado = i;
+		            	break;
 		            }
 		        }
+	    	 
 	    	 for(int i = indexEncontrado ; i < this.ultimo;i++) {
 	    		 listaProdutos[i] = listaProdutos[i+1];
+	    		 listaProdutos[this.ultimo] = null;
 	    	 }
+	    	 this.ultimo-=1;
 	    	
 	    }
 

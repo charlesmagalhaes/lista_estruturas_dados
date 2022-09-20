@@ -33,7 +33,7 @@ public class Main {
 	        
 	        gabriel.remover(produto10);
 	        
-	        System.out.println("-----------------------------------------------------------");
+	        System.out.println("-----------------------------------------------------------------------------");
 	        gabriel.imprimiLista();
 
 

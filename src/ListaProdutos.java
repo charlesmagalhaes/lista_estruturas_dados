@@ -54,7 +54,7 @@ public class ListaProdutos {
 		            }
 		        }
 	    	 for(int i = indexEncontrado ; i < this.ultimo;i++) {
-	    		 
+	    		 listaProdutos[i] = listaProdutos[i+1];
 	    	 }
 	    	
 	    }

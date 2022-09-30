@@ -23,20 +23,33 @@ public class Main {
 	        gabriel.inserir(produto4);
 	        gabriel.inserir(produto5);
 	        gabriel.inserir(produto6);
-	       /* gabriel.inserir(produto7);
+	        gabriel.inserir(produto7);
 	        gabriel.inserir(produto8);
 	        gabriel.inserir(produto9);
 	        gabriel.inserir(produto10);
-	        */
+	        gabriel.inserir(produto10);
+	       
+	        System.out.println("-----------------------------------------------------------------------------");
+	       
+	        
 	        gabriel.imprimiLista();
 
 	        
 	        gabriel.remover(produto2);
+	     
+	        gabriel.remover(produto1);
 	        
 	        System.out.println("-----------------------------------------------------------------------------");
+
 	        gabriel.imprimiLista();
-
-
+	        
+	        gabriel.inserir(produto2);
+	        gabriel.inserir(produto6);
+	        
+	        System.out.println("-----------------------------------------------------------------------------");
+	        
+	        gabriel.imprimiLista();
+		
 	}
 
 }

@@ -19,13 +19,15 @@ public class ListaProdutos {
 	    }
 	    
 	    public void inserir(Produto produto){
-	       /* if(this.ultimo >= this.listaProdutos.length){
+	    	
+	       if(this.ultimo >= this.listaProdutos.length){
 	            System.out.println("Lista Cheia...Não é permitido adicionar outro produto");
-	        }else{*/
+	        }else{
 	            this.listaProdutos[this.ultimo] = produto;
 	            this.ultimo = this.ultimo+1;
 	            System.out.println("Produto inserido com sucesso");
-	       /* }*/
+	        }
+	       
 	    }
 	    
 	    public void imprimiLista(){
@@ -48,7 +50,7 @@ public class ListaProdutos {
 	    
 	    public void remover(Produto produto) {
 	    	int indexEncontrado = 0;
-	    	System.out.println("Ultimo"+this.ultimo);
+	    	
 	    	 for (int i=0; i < this.ultimo;i++){
 		            if(produto.nome == listaProdutos[i].nome) {
 		            	indexEncontrado = i;
@@ -56,11 +58,19 @@ public class ListaProdutos {
 		            }
 		        }
 	    	 
+	    	 
 	    	 for(int i = indexEncontrado ; i < this.ultimo;i++) {
-	    		 listaProdutos[i] = listaProdutos[i+1];
-	    		 listaProdutos[this.ultimo] = null;
-	    	 }
+	    		 if( i < (this.ultimo -1)) {
+
+	    			 listaProdutos[i] = listaProdutos[i+1];
+	    		 } 
+	    			 
+	    		 }
+    			 
+	    	 listaProdutos[this.ultimo -1] = null;
 	    	 this.ultimo-=1;
+	    	 
+	    	 System.out.println("Produto excluido com sucesso");
 	    	
 	    }
 
